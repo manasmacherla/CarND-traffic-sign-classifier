@@ -108,6 +108,7 @@ EPOCHS = 20
 BATCH_SIZE = 128
 keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 
+"""
 def LeNet(X):
     #     keep_prob = tf.placeholder(tf.float32)
     mu = 0
@@ -207,8 +208,6 @@ def LeNet(x):
     logits = tf.add(tf.matmul(fcn2, fcn3_W), fcn3_b)
                               
     return logits
-
-"""
 
 ##################### TRAINING MODEL ###########################
 
