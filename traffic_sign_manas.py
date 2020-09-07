@@ -166,7 +166,7 @@ def LeNet(x):
     
     # TODO: Activation.
     cnn1 = tf.nn.relu(cnn1)
-    #cnn1 = tf.nn.dropout(cnn1, 0.8)
+    cnn1 = tf.nn.dropout(cnn1, 0.8)
 
     # TODO: Pooling. Input = 28x28x6. Output = 14x14x6.
     cnn1 = tf.nn.max_pool(cnn1, ksize=[1,2,2,1], strides=[1,2,2,1], padding='VALID')
@@ -178,7 +178,7 @@ def LeNet(x):
     
     # TODO: Activation.
     cnn2 = tf.nn.relu(cnn2)
-    #cnn2 = tf.nn.dropout(cnn2, 0.8)
+    cnn2 = tf.nn.dropout(cnn2, 0.8)
 
     # TODO: Pooling. Input = 10x10x16. Output = 5x5x16.
     cnn2 = tf.nn.max_pool(cnn2, ksize=[1,2,2,1], strides=[1,2,2,1], padding='VALID')
